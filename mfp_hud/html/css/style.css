@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+     font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    max-width: 100%;
+    user-select: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+}
+
+#hud {
+    position: absolute;
+    font-family: 'League Spartan', sans-serif;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) scale(0.8);
+}
+
+.hud-item {
+    min-width: 150px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.hud-item i {
+    margin-left: 8px;
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.hud-item p {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.hud-bar {
+    width: 75%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 9px;
+    margin-left: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hud-fill {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    transition: 150ms;
+}
+
+.hud-fill-low {
+    width: 100%;
+    height: 100%;
+    background: #cf1111;
+    transition: 150ms;
+    opacity: 1;
+}
+
+
+#hud i, #hud p {
+    font-size: 80%;
+}

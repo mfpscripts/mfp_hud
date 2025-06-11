@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    max-width: 100%;
+    user-select: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hud {
+    position: absolute;
+    font-family: 'League Spartan', sans-serif;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transform-origin: top right;
+}
+
+.hud-item {
+    min-width: 150px;
+    width: 100%;
+    height: 3.5vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5vh; /* Standardabstand */
+}
+
+.hud-item i {
+    margin-left: 0.8vh;
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.8vh;
+}
+
+.hud-item p {
+    margin-left: 1vh;
+    color: #fff;
+}
+
+.hud-bar {
+    width: 75%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 0.9vh;
+    margin-left: 1.5vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hud-fill {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    transition: 150ms;
+}
+
+.hud-fill-low {
+    width: 100%;
+    height: 100%;
+    background: #cf1111;
+    transition: 150ms;
+    opacity: 1;
+}
+
+#hud i, #hud p {
+    font-size: 80%;
+}
+
+/* Kleinere Bildschirme */
+@media (max-width: 480px) {
+    #hud {
+        transform: translateY(-50%) scale(0.5);
+        right: 5px;
+    }
+
+    .hud-item {
+        min-width: 80px;
+        margin-top: 1vh; /* Erhöhter Abstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 60%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    #hud {
+        transform: translateY(-50%) scale(0.6);
+        right: 10px;
+    }
+
+    .hud-item {
+        min-width: 100px;
+        margin-top: 1vh; /* Erhöhter Abstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 70%;
+    }
+}
+
+/* Mittlere Bildschirme */
+@media (min-width: 601px) and (max-width: 768px) {
+    #hud {
+        transform: translateY(-50%) scale(0.7);
+        right: 15px;
+    }
+
+    .hud-item {
+        min-width: 110px;
+        margin-top: 0.8vh; /* Angepasster Abstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 72%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hud {
+        transform: translateY(-50%) scale(0.8);
+        right: 20px;
+    }
+
+    .hud-item {
+        min-width: 120px;
+        margin-top: 0.8vh; /* Angepasster Abstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #hud {
+        transform: translateY(-50%) scale(0.9);
+        right: 25px;
+    }
+
+    .hud-item {
+        min-width: 130px;
+        margin-top: 0.8vh; /* Angepasster Abstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 77%;
+    }
+}
+
+/* Größere Bildschirme */
+@media (min-width: 1201px) and (max-width: 1440px) {
+    #hud {
+        transform: translateY(-50%) scale(1);
+        right: 30px;
+    }
+
+    .hud-item {
+        min-width: 150px;
+        margin-top: 0.5vh; /* Standardabstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    #hud {
+        transform: translateY(-50%) scale(1);
+        right: 20px;
+    }
+
+    .hud-item {
+        min-width: 140px;
+        margin-top: 0.5vh; /* Standardabstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 85%;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    #hud {
+        transform: translateY(-50%) scale(0.9);
+        right: 20px;
+    }
+
+    .hud-item {
+        min-width: 120px;
+        margin-top: 0.5vh; /* Standardabstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 95%;
+    }
+}
+
+@media (min-width: 2561px) and (max-width: 3440px) {
+    #hud {
+        transform: translateY(-50%) scale(1.3);
+        right: 45px;
+    }
+
+    .hud-item {
+        min-width: 120px;
+        margin-top: 0.5vh; /* Standardabstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 3441px) and (max-width: 3840px) {
+    #hud {
+        transform: translateY(-50%) scale(1.4);
+        right: 50px;
+    }
+
+    .hud-item {
+        min-width: 120px;
+        margin-top: 0.5vh; /* Standardabstand */
+    }
+
+    #hud i, #hud p {
+        font-size: 100%;
+    }
+}
+
+/* 4K Auflösung (3840x2160) */
+@media (min-width: 3840px) {
+    #hud {
+        zoom: 80%;
+        right: 50px;
+    }
+
+    .hud-item {
+        min-width: 120px;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        margin-top: 1vh; /* Angepasster Abstand */
+    }
+}

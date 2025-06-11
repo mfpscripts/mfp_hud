@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <main>
+        <div id="hud">
+            <div class="hud-item" id="microphone-range">
+                <i class="fas fa-microphone-lines"></i>
+                <div class="hud-bar" id="slider">
+                    <div class="hud-fill" id="filler_range"></div>
+                </div>
+            </div>
+            <div class="hud-item" id="money-con">
+                <i class="fa-solid fa-coins"></i>
+                <p>$</p>
+                <p id="money"></p>
+            </div>
+            <div class="hud-item" id="food">
+                <i class="fas fa-utensils"></i>
+                <div class="hud-bar" id="slider">
+                    <div class="hud-fill" id="filler_food">
+                        <div class="hud-fill-low" id="filler_food_low"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-item" id="thirst">
+                <i class="fas fa-martini-glass"></i>
+                <div class="hud-bar" id="slider">
+                    <div class="hud-fill" id="filler_thirst">
+                        <div class="hud-fill-low" id="filler_thirst_low"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-item" id="drunk">
+                <i class="fas fa-beer-mug-empty"></i>
+                <div class="hud-bar" id="slider">
+                    <div class="hud-fill" id="filler_drunk">
+                        <div class="hud-fill-low" id="filler_drunk_low"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-item" id="health">
+                <i class="fas fa-heart"></i>
+                <div class="hud-bar" id="slider">
+                    <div class="hud-fill" id="filler_health">
+                        <div class="hud-fill-low" id="filler_health_low"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-item" id="car">
+                <div class="hud-item" id="fuel">
+                    <i class="fas fa-gas-pump"></i>
+                    <div class="hud-bar" id="slider">
+                        <div class="hud-fill" id="filler_fuel">
+                            <div class="hud-fill-low" id="filler_fuel_low"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hud-item" id="tacho">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <p><f id="speed">0</f> km/h</p>
+                </div>
+                <div class="hud-item" id="range">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p><f id="rangekm">0</f> KM</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/index.js"></script>
+</html>
